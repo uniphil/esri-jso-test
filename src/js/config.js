@@ -27,7 +27,7 @@ var dojoConfig = {
     basePath: '.',
     action: 'release',
     layers: {
-      'dojo/dojo': [
+      'dojo/dojo': {
         include: ['app'],
         exclude: [
           'dojo',
@@ -38,7 +38,7 @@ var dojoConfig = {
         includeLocales: ['en-us'],
         customBase: true,
         boot: true
-      ]
+      }
     }
   }
 }

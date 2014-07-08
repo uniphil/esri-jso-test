@@ -12,6 +12,11 @@ Download a custom build, selecting _only_ the modules needed by the app. For thi
   * `dojo/text`
   * `esri/map`
 
+Based on the 404s ecountered layer, it seems the following are also required:
+
+ * `dojox/gfx/svg`
+ * `esri/dijit/Attribution`  (note: my JSO builds were getting `queued` so I do not have a build with this explicitly included. I hacked my previous build by sym-linking `jso/dojo/dijit` to `jso/esri/dijit`)
+
 
 Select **Advanced Optimizations** and configure:
 
@@ -46,5 +51,5 @@ _Note: a symbolic link called `util` points at `dojo-util` because the build scr
 
 ### Run the build
 
-
+(the un-built local version with ADM and JSO-esri is not working yet, so a build has not been attempted.)
 
